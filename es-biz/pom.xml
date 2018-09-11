@@ -12,11 +12,7 @@
     <artifactId>es-biz</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>es</groupId>
-            <artifactId>es-service</artifactId>
-            <version>${es.service.version}</version>
-        </dependency>
+
     </dependencies>
 
 </project>
