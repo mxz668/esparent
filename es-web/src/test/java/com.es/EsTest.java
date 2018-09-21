@@ -17,16 +17,13 @@ import org.springframework.test.context.web.WebAppConfiguration;
 
 import javax.annotation.Resource;
 
-//@RunWith(SpringRunner.class)
-//@ComponentScan(basePackages = "com.es")
-//@SpringBootTest(classes = Application.class)
-//@WebAppConfiguration
-@RunWith(SpringJUnit4ClassRunner.class)
-//@ContextConfiguration(locations = {"classpath:*.xml", "classpath:/*.xml"})
+//@RunWith(SpringJUnit4ClassRunner.class)
+@RunWith(SpringRunner.class)
+@ContextConfiguration(locations = {"classpath*:*.xml"})
 public class EsTest {
 
-//    @Autowired
-//    TestService testService;
+    @Autowired
+    TestService testService;
 
     @Test
     public void createIndex(){
