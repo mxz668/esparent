@@ -20,9 +20,9 @@ public class CanalClient {
         int emptyCount = 0;
         try {
             connector.connect();
-            connector.subscribe(". /..");
+//            connector.subscribe("./..");
             //订阅 监控的 数据库.表
-//            connector.subscribe("test_checksum.tb_article");
+            connector.subscribe("test_checksum.tb_article");
             connector.rollback();
             int totalEntryCount = 120;
             while (emptyCount < totalEntryCount) {

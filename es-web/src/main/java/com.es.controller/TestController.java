@@ -22,4 +22,10 @@ public class TestController {
         String ret = testService.createIndex();
         return ret;
     }
+
+    @RequestMapping(value = "query",method = RequestMethod.POST)
+    public void query(){
+        String ret = testService.query();
+        System.out.println(ret);
+    }
 }
